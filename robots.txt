@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://neonflowdev-website.pages.dev/sitemap.xml
