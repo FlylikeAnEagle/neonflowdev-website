@@ -88,7 +88,7 @@ h1{font-family:'Syne',sans-serif;font-size:clamp(2.4rem,6vw,4rem);font-weight:80
 .sec-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--neon);margin-bottom:0.75rem}
 .sec-title{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;line-height:1.15}
 .sec-sub{color:var(--txt-dim);font-size:0.92rem;margin-top:0.75rem;max-width:480px;margin-inline:auto}
-.services-grid{max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.services-grid{max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
 .svc-card{background:var(--bg);padding:2rem 1.75rem;position:relative;overflow:hidden;transition:background 0.2s;cursor:default}
 .svc-card:hover{background:var(--bg2)}
 .svc-num{font-family:'Syne',sans-serif;font-size:2.5rem;font-weight:800;color:transparent;line-height:1;margin-bottom:1.25rem;position:relative}
@@ -179,7 +179,6 @@ footer{padding:2rem;border-top:1px solid var(--border);display:flex;align-items:
 
 /* ── TABLET ── */
 @media(min-width:769px) and (max-width:1024px){
-  .services-grid{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr)}
   .steps::before{display:none}
   .why-inner{grid-template-columns:1fr;gap:2.5rem}
@@ -374,7 +373,7 @@ footer{padding:2rem;border-top:1px solid var(--border);display:flex;align-items:
     <p class="sec-sub">Start with a build, add managed hosting, grow into a full ongoing partnership.</p>
   </div>
   <div class="services-grid">
-    <div class="svc-card">
+    <div class="svc-card" style="grid-column:1/-1">
       <div class="svc-tag">Start here</div>
       <div class="svc-num" data-num="01" aria-hidden="true"></div>
       <div class="svc-title">The Build</div>
